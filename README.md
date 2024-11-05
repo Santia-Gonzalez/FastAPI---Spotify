@@ -12,7 +12,7 @@ This project uses FastAPI to create an API that interacts with the Spotify API t
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/your-repository.git
+    git clone https://github.com/your-username/FastAPI---Spotify.git
     cd your-repository
     ```
 
@@ -23,7 +23,7 @@ This project uses FastAPI to create an API that interacts with the Spotify API t
 
 3. Activate the environment:
     ```sh
-    conda activate my_environment
+    conda activate FastAPI
     ```
 
 ## Spotify Credentials
