@@ -1,0 +1,37 @@
+#El arroba en sintaxis de Python significa "decorator" - dentro del lenguaje, le dices que para ese proceso
+#realice la función que está definida debajo, esto es diferente al enrutamiento que vimos
+#en la aplicación de Starlette
+@app.get("/")
+async def read_root():
+    return {"Hello": "World"}
+
+Por la sintaxis que utilizamos en nuestra aplicación
+
+El parametro que recibimos dentro de las llaves de nuestro end point  lo pasará como referencia nuestra función en general
+
+@app.get("/items/{item_id}")
+async def read_item(item_id):
+    return {"item_id": item_id}
+
+También podemos por sintaxis de python asignar el tipo de variable que queremos que reciba nuestra
+función en general
+
+Dato: al hacer cambios dentro de nuestro código, se actualizan instantaneamente para seguir corriendo
+el programa
+
+------ Pydantic ---------
+    1. Validación de datos
+    2. Conversión automática de tipos
+    3. Modelos de datos definidos con clases - Python
+    4. Mensajes de error descriptivos, es decir, se encarga de decir el error en caso de que
+    ocurra
+
+tener cuidado con la generación de routes que damos para las demás partes del programa
+en general
+
+si necesitamos un paramétro obligatorio, podemos usar la palabra reservada de "needy" para obligar a 
+colocar el paramétro
+
+Dos posibilidades de poder hacer el query dentro de FastAPI y tener validaciones extra
+
+Put actualiza todos los datos de una identidad, sin embargo, con patch solo actualiza un atributo
